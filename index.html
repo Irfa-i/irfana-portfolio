@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irfana Parveen H | Software & AI/ML Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Irfana Parveen H - Software & AI/ML Engineer specializing in Healthcare ERP AI Systems, Voice AI, NLP, Deep Learning, and Production ML Pipelines at Brainvoice.ai.">
+  
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="cyan">
+
+  <!-- Background Synapse Particle Canvas & Cyber Grid -->
+  <canvas id="synapseCanvas"></canvas>
+  <div class="grid-overlay"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-brain"></i></div>
+        <span>IRFANA<span class="gradient-text">.AI</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link active">Home</a></li>
+        <li><a href="#projects" class="nav-link">Featured Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- SFX Toggle -->
+        <button class="ctrl-btn" id="sfxToggle" title="Toggle SFX Audio">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
+        <!-- Theme Toggle -->
+        <button class="ctrl-btn" id="themeToggle" title="Switch Color Palette">
+          <i class="fa-solid fa-palette"></i>
+        </button>
+        <!-- CLI Terminal Drawer Button -->
+        <button class="ctrl-btn" id="terminalToggle" title="Open AI CLI Terminal">
+          <i class="fa-solid fa-terminal"></i>
+        </button>
+
+        <a href="#contact" class="btn-primary">
+          <span>Connect</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="status-badge">
+          <div class="status-pulse"></div>
+          <span>ML ENGINEER @ BRAINVOICE.AI | COIMBATORE, TN</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <br>
+          <span class="gradient-text">IRFANA PARVEEN H</span>
+        </h1>
+
+        <div class="typing-container">
+          <span>&gt; </span>
+          <span id="typingText"></span>
+          <span class="typing-cursor"></span>
+        </div>
+
+        <p class="hero-bio">
+          Software and AI/ML Engineer with a B.Tech in Artificial Intelligence and Data Science. Experienced in developing and deploying Python-based machine learning solutions, healthcare ERP AI engines, constraint-based scheduling algorithms, speech processing pipelines, predictive analytics, and production systems.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#projects" class="btn-primary">
+            <span>Explore Featured Projects</span>
+            <i class="fa-solid fa-laptop-code"></i>
+          </a>
+          <a href="#experience" class="btn-secondary">
+            <span>View Experience</span>
+            <i class="fa-solid fa-briefcase"></i>
+          </a>
+        </div>
+
+        <div class="hero-contact-strip">
+          <a href="mailto:irfuirfa2003@gmail.com" class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>irfuirfa2003@gmail.com</span>
+          </a>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Coimbatore, Tamil Nadu</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Avatar & Floating AI Metrics -->
+      <div class="hero-visual">
+        <div class="avatar-frame">
+          <img src="assets/avatar.jpg" alt="Irfana Parveen H AI Avatar" class="avatar-img">
+          
+          <div class="floating-badge top-left">
+            <div class="badge-icon"><i class="fa-solid fa-robot"></i></div>
+            <div class="badge-text">
+              <span>Primary Engine</span>
+              <strong>Python & PyTorch</strong>
+            </div>
+          </div>
+
+          <div class="floating-badge bottom-right">
+            <div class="badge-icon"><i class="fa-solid fa-hospital-user"></i></div>
+            <div class="badge-text">
+              <span>Healthcare AI ERP</span>
+              <strong>AVCRI Systems</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Showcase Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-tag">Featured Work</div>
+      <h2 class="section-title">Key Engineering <span class="gradient-text">Projects</span></h2>
+      <p class="section-desc">Enterprise AI healthcare ERP engines, constraint scheduling algorithms, predictive analytics, mobile NLP applications, and computer vision systems.</p>
+
+      <!-- Flagship Enterprise Project: AVCRI Healthcare ERP -->
+      <div class="glass-card flagship-project-card" style="margin-bottom: 3rem; padding: 2.5rem;">
+        <div class="flagship-header" style="display: grid; grid-template-columns: 1fr 340px; gap: 2rem; align-items: center; margin-bottom: 2rem;">
+          <div>
+            <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 8px;">
+              <span class="tech-tag" style="background: var(--accent-cyan-glow); color: var(--accent-cyan); border-color: var(--accent-cyan); font-weight:700;">
+                <i class="fa-solid fa-star"></i> FLAGSHIP ENTERPRISE SYSTEM
+              </span>
+              <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-purple);">
+                ML Engineer | Brainvoice.AI | 2026
+              </span>
+            </div>
+            
+            <h3 style="font-size: 2rem; font-weight: 800; line-height: 1.25; margin-bottom: 1rem;">
+              AVCRI ERP & AI-Driven Healthcare Management System
+            </h3>
+            
+            <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.6;">
+              Arya Vaidya Chikitsalayam & Research Institute (AVCRI) AI-driven healthcare ERP system, integrating machine learning, constraint-based therapist scheduling, patient demand prediction, forecasting, clinical workflows, and real-time operational analytics.
+            </p>
+          </div>
+
+          <div style="border-radius: 16px; overflow: hidden; height: 210px; border: 1px solid var(--border-color); position: relative;">
+            <img src="assets/avcri.jpg" alt="AVCRI Healthcare ERP AI System" style="width: 100%; height: 100%; object-fit: cover;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(180deg, transparent 50%, rgba(15, 23, 42, 0.9) 100%);"></div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <h4 style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-cyan); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 0.75rem;">
+            // Tech Stack & Methodologies
+          </h4>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Machine Learning</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">AI/ML</span>
+            <span class="tech-tag">Forecasting</span>
+            <span class="tech-tag">Predictive Analytics</span>
+            <span class="tech-tag">Scheduling Algorithms</span>
+          </div>
+        </div>
+
+        <div style="border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+          <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary);">
+            <i class="fa-solid fa-list-check" style="color: var(--accent-cyan); margin-right: 8px;"></i> Technical Contributions & Architecture:
+          </h4>
+          
+          <ul class="timeline-bullets" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 0.85rem;">
+            <li>Developed and enhanced an <strong>AI-driven healthcare ERP system</strong> for Arya Vaidya Chikitsalayam & Research Institute (AVCRI), contributing across <strong>AI/ML, scheduling, clinical, pharmacy, nursing, administrative, and workflow modules</strong>.</li>
+            <li>Designed and refined a <strong>constraint-based therapist scheduling and resource allocation algorithm</strong> considering therapist availability, treatment requirements, therapist skill levels, room availability, treatment duration, continuity, shift constraints, emergency cases, cancellations, and rescheduling.</li>
+            <li>Worked on <strong>patient prediction models</strong> to identify patterns in patient treatment requirements and support data-driven clinical and operational decision-making.</li>
+            <li>Developed <strong>forecasting models and predictive analytics</strong> for healthcare operations, including treatment demand, therapy utilization, resource requirements, and revenue-related insights.</li>
+            <li>Performed <strong>data preprocessing, feature engineering, exploratory data analysis, model validation, and performance analysis</strong> for ML and forecasting workflows.</li>
+            <li>Implemented and validated <strong>AI scheduling rules and business constraints</strong>, conducting regression testing to ensure consistent resource allocation and continuity across treatment schedules.</li>
+            <li>Contributed to <strong>real-time operational dashboards and analytics</strong>, including treatment room status, therapist productivity, therapy utilization, cancellation impact, frequently used therapy items, and revenue forecasting.</li>
+            <li>Worked with stakeholders to translate complex healthcare workflows and business requirements into <strong>technical specifications, scheduling conditions, requirement traceability, and AI/ML implementation logic</strong>.</li>
+            <li>Supported <strong>Pre-Phase 2 AI fine-tuning, internal testing, regression testing, UAT, and Phase-2 ERP planning</strong>, ensuring ML and scheduling components aligned with validated clinical workflows.</li>
+            <li>Collaborated with cross-functional teams to integrate <strong>AI-driven decision support with healthcare ERP workflows</strong>, improving automation and reducing manual scheduling and operational processes.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Grid of Other Projects -->
+      <div class="projects-grid">
+        
+        <!-- Project 1: IntelliQ -->
+        <div class="glass-card project-card">
+          <div class="project-banner" style="background-image: linear-gradient(135deg, rgba(0,240,255,0.2), rgba(138,43,226,0.3)), url('assets/avatar.jpg');">
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">Groq API</span>
+              <span class="tech-tag">BERT</span>
+            </div>
+          </div>
+          <h3 class="project-title">IntelliQ – AI-Powered Mobile Chatbot</h3>
+          <p class="project-desc">
+            Developed a cross-platform mobile AI application featuring a React Native frontend and Flask microservice backend. Integrated NLP deep learning models (BERT & LSTM) with Groq API for real-time responses, model parameter tuning, chat history management, and robust API workflows.
+          </p>
+        </div>
+
+        <!-- Project 2: Mental Disorder Prediction -->
+        <div class="glass-card project-card">
+          <div class="project-banner" style="background-image: linear-gradient(135deg, rgba(0,255,157,0.2), rgba(0,240,255,0.3)), url('assets/avatar.jpg');">
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">scikit-learn</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">SVM</span>
+              <span class="tech-tag">Logistic Regression</span>
+            </div>
+          </div>
+          <h3 class="project-title">Mental Disorder Prediction Model</h3>
+          <p class="project-desc">
+            Built an end-to-end data classification solution analyzing survey data. Applied Logistic Regression and Support Vector Machines (SVM) with automated Pandas data validation pipelines to output reliable mental health risk indicator scores.
+          </p>
+        </div>
+
+        <!-- Project 3: Hand Gesture CV Interface -->
+        <div class="glass-card project-card">
+          <div class="project-banner" style="background-image: linear-gradient(135deg, rgba(138,43,226,0.3), rgba(0,240,255,0.2)), url('assets/avatar.jpg');">
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">MediaPipe</span>
+              <span class="tech-tag">Real-Time Computer Vision</span>
+            </div>
+          </div>
+          <h3 class="project-title">Hand Gesture Controlled Interface</h3>
+          <p class="project-desc">
+            Created a real-time computer vision system for touchless human-computer interaction. Implemented multi-hand landmark tracking using MediaPipe & OpenCV to map custom recognized gestures directly to operating system commands.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-tag">Technical Competencies</div>
+      <h2 class="section-title">Skills & <span class="gradient-text">Tech Stack</span></h2>
+      <p class="section-desc">Tools, frameworks, and methodologies I specialize in across AI, software engineering, healthcare analytics, and data science.</p>
+
+      <!-- Skill Category Filter Chips -->
+      <div class="skills-filter">
+        <button class="filter-chip active" data-filter="all">All Skills</button>
+        <button class="filter-chip" data-filter="aiml">AI & Deep Learning</button>
+        <button class="filter-chip" data-filter="cv">Vision & APIs</button>
+        <button class="filter-chip" data-filter="software">Software & Web</button>
+        <button class="filter-chip" data-filter="data">Data & Analytics</button>
+      </div>
+
+      <!-- Skill Chips Grid -->
+      <div class="skills-grid">
+        <div class="skill-chip" data-cat="aiml">
+          <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+          <div class="skill-info">
+            <h5>Python</h5>
+            <span>Core Language</span>
+          </div>
+        </div>
+
+        <div class="skill-chip" data-cat="aiml">
+          <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="skill-info">
+            <h5>Forecasting</h5>
+            <span>Predictive Analytics</span>
+          </div>
+        </div>
+
+        <div class="skill-chip" data-cat="aiml">
+          <div class="skill-icon"><i class="fa-solid fa-calendar-check"></i></div>
+          <div class="skill-info">
+            <h5>Constraint Scheduling</h5>
+            <span>Resource Allocation</span>
+          </div>
+        </div>
+
+        <div class="skill-chip" data-cat="aiml">
+          <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+          <div class="skill-info">
+            <h5>PyTorch</h5>
+            <span>Deep Learning</span>
+          </div>
+        </div>
+
+        <div class="skill-chip" data-cat="aiml">
+          <div class="skill-icon"><i class="fa-solid fa-microchip"></i></div>
+          <div class="skill-info">
+            <h5>TensorFlow</h5>
+            <span>Model Training</span>
+          </div>
+        </div>
+
+        <div class="skill-chip" data-cat="aiml">
+          <div class="skill-icon"><i class="fa-solid fa-font"></i></div>
+          <div class="skill-info">
+            <h5>Hugging Face</h5>
+            <span>NLP & Transformers</span>
+          </div>
+        </div>
+
+        <div class="skill-chip" data-cat="aiml">
+          <div class="skill-icon"><i class="fa-solid fa-cube"></i></div>
+          <div class="skill-info">
+            <h5>scikit-learn</h5>
+            <span>Machine Learning</span>
+          </div>
+        </div>
+
+        <div class="skill-chip" data-cat="cv">
+          <div class="skill-icon"><i class="fa-solid fa-eye"></i></div>
+          <div class="skill-info">
+            <h5>OpenCV</h5>
+            <span>Computer Vision</span>
+          </div>
+        </div>
+
+        <div class="skill-chip" data-cat="cv">
+          <div class="skill-icon"><i class="fa-solid fa-hand"></i></div>
+          <div class="skill-info">
+            <h5>MediaPipe</h5>
+            <span>Hand Tracking</span>
+          </div>
+        </div>
+
+        <div class="skill-chip" data-cat="cv">
+          <div class="skill-icon"><i class="fa-solid fa-bolt"></i></div>
+          <div class="skill-info">
+            <h5>Groq API</h5>
+            <span>LLM Inference</span>
+          </div>
+        </div>
+
+        <div class="skill-chip" data-cat="software">
+          <div class="skill-icon"><i class="fa-solid fa-flask"></i></div>
+          <div class="skill-info">
+            <h5>Flask</h5>
+            <span>RESTful Microservices</span>
+          </div>
+        </div>
+
+        <div class="skill-chip" data-cat="software">
+          <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+          <div class="skill-info">
+            <h5>React Native</h5>
+            <span>Mobile Apps</span>
+          </div>
+        </div>
+
+        <div class="skill-chip" data-cat="data">
+          <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+          <div class="skill-info">
+            <h5>Pandas & NumPy</h5>
+            <span>Data Analysis</span>
+          </div>
+        </div>
+
+        <div class="skill-chip" data-cat="data">
+          <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+          <div class="skill-info">
+            <h5>MongoDB & SQL</h5>
+            <span>Databases & MySQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education Section -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-tag">Career Journey</div>
+      <h2 class="section-title">Experience & <span class="gradient-text">Education</span></h2>
+      <p class="section-desc">My professional trajectory in software engineering, healthcare ERP AI systems, voice machine learning pipelines, and academic achievements.</p>
+
+      <div class="timeline">
+        
+        <!-- Timeline Item 1: Brainvoice.ai -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Sep 2025 – Present</div>
+          <h3 class="timeline-role">ML Engineer</h3>
+          <div class="timeline-company">Brainvoice.ai</div>
+          <ul class="timeline-bullets">
+            <li>Developed and enhanced an AI-driven healthcare ERP system for Arya Vaidya Chikitsalayam & Research Institute (AVCRI), specializing in constraint-based scheduling algorithms, patient prediction models, and operational forecasting.</li>
+            <li>Develop and deploy Python-based machine learning solutions for voice AI applications, including speech processing, voice analytics, and automation.</li>
+            <li>Build and maintain machine learning pipelines covering data preprocessing, model training, evaluation, deployment, and production workflows.</li>
+            <li>Apply NLP and deep learning techniques to speech-to-text, text-to-speech, and voice-understanding applications.</li>
+            <li>Analyze model behavior and optimize performance to support reliable real-time inference in production environments.</li>
+            <li>Collaborate with cross-functional teams to integrate ML models into production systems and troubleshoot implementation issues.</li>
+          </ul>
+        </div>
+
+        <!-- Timeline Item 2: Crion Versity -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Internship</div>
+          <h3 class="timeline-role">Data Analyst Intern</h3>
+          <div class="timeline-company">Crion Versity, Coimbatore</div>
+          <ul class="timeline-bullets">
+            <li>Analyzed complex datasets using Excel and Python to extract actionable business insights.</li>
+            <li>Contributed to data-driven analysis and strategic recommendations supporting key outcomes.</li>
+          </ul>
+        </div>
+
+        <!-- Timeline Item 3: B.Tech Degree -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2021 – 2025</div>
+          <h3 class="timeline-role">Bachelor of Technology in Artificial Intelligence & Data Science</h3>
+          <div class="timeline-company">Rathinam Technical Campus, Coimbatore | GPA: 7.8</div>
+          <ul class="timeline-bullets">
+            <li>Specialized in Machine Learning, Deep Learning, Natural Language Processing, and Data Structures.</li>
+            <li>Completed key projects in healthcare ERP AI systems, voice AI, computer vision interfaces, and risk classification.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-tag">Credentials</div>
+      <h2 class="section-title">Certifications & <span class="gradient-text">Recognitions</span></h2>
+
+      <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <div class="glass-card" style="padding:1.5rem;">
+          <i class="fa-solid fa-certificate" style="font-size:2rem; color:var(--accent-cyan); margin-bottom:1rem;"></i>
+          <h4>Python for Data Science, AI & Development</h4>
+          <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:6px;">Issued by Coursera</p>
+        </div>
+
+        <div class="glass-card" style="padding:1.5rem;">
+          <i class="fa-solid fa-chart-line" style="font-size:2rem; color:var(--accent-purple); margin-bottom:1rem;"></i>
+          <h4>Data Analytics and Tableau</h4>
+          <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:6px;">Specialized Visualization & Analytics</p>
+        </div>
+
+        <div class="glass-card" style="padding:1.5rem;">
+          <i class="fa-solid fa-network-wired" style="font-size:2rem; color:var(--accent-emerald); margin-bottom:1rem;"></i>
+          <h4>Advanced Deep Learning & NLP Techniques</h4>
+          <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:6px;">Neural Architectures & Transformers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLI Terminal Modal Drawer -->
+  <div class="terminal-modal" id="terminalModal">
+    <div class="terminal-window">
+      <div class="terminal-header">
+        <div class="terminal-dots">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="terminal-title">irfana@ai-workstation:~ (bash)</div>
+        <button style="background:none; border:none; color:var(--text-muted); cursor:pointer;" id="closeTermBtn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="terminal-body" id="termBody">
+        <div class="terminal-line">Welcome to Irfana Parveen H's AI Command Line Terminal.</div>
+        <div class="terminal-line">Type <span style="color:var(--accent-cyan)">'help'</span> to view available commands.</div>
+      </div>
+
+      <div style="padding: 1rem; border-top: 1px solid var(--border-color); background: rgba(0,0,0,0.5);">
+        <div class="terminal-input-line">
+          <span class="terminal-prompt">irfana@ai-workstation:~$</span>
+          <input type="text" class="terminal-input" id="termInput" placeholder="Type a command (e.g. skills, projects, contact)..." autofocus>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact & Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="contact-card-box glass-card">
+        <div class="section-tag" style="justify-content: center;">Get In Touch</div>
+        <h2 style="font-size:2.2rem; margin-bottom:1rem;">Let's Build <span class="gradient-text">Reliable AI Systems</span> Together</h2>
+        <p style="color:var(--text-secondary); margin-bottom:2rem;">Interested in software engineering, machine learning automation, healthcare ERP AI engines, or production AI integration.</p>
+
+        <div>
+          <button class="copy-badge" onclick="copyText('irfuirfa2003@gmail.com', 'Email Address')">
+            <i class="fa-solid fa-envelope"></i> irfuirfa2003@gmail.com <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+
+        <div style="margin-top: 2rem;">
+          <a href="mailto:irfuirfa2003@gmail.com" class="btn-primary">
+            <span>Send Email Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </a>
+        </div>
+      </div>
+
+      <p style="color:var(--text-muted); font-size:0.85rem;">
+        © 2026 Irfana Parveen H | Software & AI/ML Engineer | Coimbatore, Tamil Nadu
+      </p>
+    </div>
+  </footer>
+
+  <!-- Toast Container -->
+  <div class="toast" id="toast">Notification</div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
